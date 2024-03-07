@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <html lang="es-MX">
@@ -8,27 +10,12 @@
 
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KSN5XDK4');</script>
-    <!-- End Google Tag Manager -->
-
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-54R3XZTL');</script>
-    <!-- End Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCF43NVS');</script>
+<!-- End Google Tag Manager -->
 
 
 
@@ -47,26 +34,34 @@
 
     <!-- <script>var Path="https://adminjaver.maus.mx";</script> -->
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11326305926"></script>
+
+
+
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'AW-11326305926');
+        window.addEventListener("load", function () {
+            const form = document.getElementById('my-form');
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        alert("Tus datos fueron enviados");
+                        // Limpia el formulario después de un envío exitoso
+                        form.reset();
+
+                        // Redirige a una nueva página HTML después de un envío exitoso
+                        window.location.href = 'gracias.html'; // Reemplaza 'nueva_pagina.html' con la URL de tu página destino.
+                    })
+            });
+        });
+
     </script>
-
-
-
-
-
-
-
-
-
-
-
 
 
     <style>
@@ -98,18 +93,11 @@
 </head>
 
 <body id="pagina" class="detalle editar cursor-auto" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-
-
+    
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSN5XDK4" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54R3XZTL" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCF43NVS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 
     <div class="container-fluid">
@@ -546,8 +534,8 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
                                 <!-- DE TI -->
 
 
-                                <form method="POST" id="my-form"
-                                    action="https://script.google.com/macros/s/AKfycbxnUBU4D-Gy6qEpgGscrWnr4V3gHXTPm0rNpLH5r9Kwb6H9svO1kMzfQ6APa90PjQF5/exec">
+                                <form method="POST" id="my-form" action="https://script.google.com/macros/s/AKfycbyf07-SS6SYQuK5cT9X4_-y-QKmR70e3aE6S24uikTCyVyZz2Sd49aQxyffICugqjMR/exec">
+
 
                                     <div class="row m-auto formulario px-xs-5">
 
@@ -1108,40 +1096,10 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
 
 
 
-    <script>
-
-        window.addEventListener("load", function () {
-            const form = document.getElementById('my-form');
-            form.addEventListener("submit", function (e) {
-                e.preventDefault();
-                const data = new FormData(form);
-                const action = e.target.action;
-
-                fetch(action, {
-                    method: 'POST',
-                    body: data,
-                })
-                    .then(() => {
-                        alert("Tus datos fueron enviados");
-                        // Limpia el formulario después de un envío exitoso
-                        form.reset();
-
-                        // Redirige a una nueva página HTML después de un envío exitoso
-                        window.location.href = 'gracias.html'; // Reemplaza 'nueva_pagina.html' con la URL de tu página destino.
-                    })
-            });
-        });
-
-
-
-    </script>
-
-
-
 
 </body>
 
 <script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpsh-oh' }, { 'server': 'p3plzcpnl451918' }, { 'dcenter': 'p3' }, { 'cp_id': '7546415' }, { 'cp_cache': '' }, { 'cp_cl': '6' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
 <script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
 
-</html>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl451918'},{'dcenter':'p3'},{'cp_id':'7546415'},{'cp_cache':''},{'cp_cl':'6'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script><script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl451918'},{'dcenter':'p3'},{'cp_id':'7546415'},{'cp_cache':''},{'cp_cl':'6'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
